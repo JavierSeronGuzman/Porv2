@@ -1,0 +1,48 @@
+.text {
+    color: aliceblue;
+    font-size: 30px;
+    font-family: 'Public Pixel', sans-serif;
+  }
+  .pres {
+    color: aliceblue;
+    font-size: 20px;
+  }
+  
+  .social-links {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* Ajusta el espacio entre los íconos según lo necesites */
+    position: relative; /* Cambiado de sticky a relative para evitar problemas de desplazamiento */
+  }
+  
+  .social-links a svg {
+    filter: drop-shadow(2px 4px 15px #006DDD);
+    animation: move 2.5s infinite ease-in-out;
+    transition: all 200ms ease-in-out;
+  }
+  
+  .social-links a svg:hover {
+    filter: drop-shadow(4px 8px 20px #ffffff);
+    cursor: pointer;
+  }
+  
+  .social-links a:nth-child(2) svg {
+    animation-delay: 200ms;
+  }
+  
+  .social-links a:nth-child(3) svg {
+    animation-delay: 400ms;
+  }
+  
+  @media (max-width: 768px) {
+    .social-links {
+      gap: 1rem; /* Ajusta el espacio en pantallas más pequeñas */
+    }
+  
+    .social-links svg {
+      width: 3rem; /* Ajusta el tamaño en pantallas más pequeñas */
+      height: 3rem;
+    }
+  }
+  
