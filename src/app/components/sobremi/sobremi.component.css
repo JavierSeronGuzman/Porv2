@@ -26,6 +26,10 @@
     max-width: 600px;
     text-align: center; /* Centra el texto */
 }
+.profile-content2 {
+    width: 100%;
+    text-align: center; /* Centra el texto */
+}
 
 .about-section p {
     margin-bottom: 10px; /* Espacio entre los párrafos */

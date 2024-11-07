@@ -3,6 +3,11 @@
     font-size: 30px;
     font-family: 'Public Pixel', sans-serif;
   }
+  .text2 {
+    color: aqua;
+    font-size: 30px;
+    font-family: 'Public Pixel', sans-serif;
+  }
   .pres {
     color: aliceblue;
     font-size: 20px;
@@ -45,31 +50,29 @@
       height: 3rem;
     }
   }
-  .fixed-navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000; /* Asegura que esté encima de otros elementos */
+  @media (max-width: 768px) {
+    .text {
+      font-size: 15px; /* Tamaño de fuente para tabletas */
+    }
   }
+  @media (min-width: 768px) {
+    .text {
+      font-size: 30px; /* Tamaño de fuente para tabletas */
+    }
+  }
+  @media (max-width: 768px) {
+    .text2 {
+      font-size: 10px; /* Tamaño de fuente para tabletas */
+    }
+  }
+  @media (min-width: 768px) {
+    .text2 {
+      font-size: 15px; /* Tamaño de fuente para tabletas */
+    }
+  }
+  
 
   .container {
     margin-top: 30px; /* Ajusta este valor según la altura del navbar */
   }
-  .arrow-icon {
-    position: absolute;
-    width: 200px; /* Ajusta el tamaño de la flecha según lo necesites */
-    height: auto;
-    right: 400px; /* Ajusta este valor para que la flecha apunte al último icono */
-    top: 50%; /* Centra la flecha verticalmente */
-    transform: translateY(-25%);
-    z-index: -1;
-    animation: blink 1.5s infinite; /* Asegura que la flecha esté centrada */
-  }
-  @keyframes blink {
-    0%, 100% {
-      opacity: 0; /* Desaparece */
-    }
-    50% {
-      opacity: 1; /* Aparece */
-    }
-  }
+

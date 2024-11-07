@@ -1,26 +1,39 @@
-<nav class="navbar navbar-expand-lg bg-transparent">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#" style="color: transparent;">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ">
-          <li class="nav-item mx-2">
-            <a class="nav-link text mi-boton" href="#" (click)="move('nombre-section')">Inicio</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link text mi-boton" href="#" (click)="move('experiencia-section')">Experiencia</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link text mi-boton" href="#" (click)="move('trabajos-section')">Proyectos</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link text mi-boton" href="#" (click)="move('sobremi-section')">Sobre mi</a>
-          </li>
-          
-        </ul>
+<div class="d-none d-lg-block">
+
+  <nav class="navbar navbar-expand-lg bg-transparent ">
+    <div class="container-fluid d-flex align-items-center justify-content-end">
+      <div class="col-xxl-7 col-xl-8 col-lg-9 d-flex align-items-center justify-content-center">
+        <a class="nav-link text mi-boton mx-2"  role="button" (click)="move('nombre-section')">Inicio</a>
+        <a class="nav-link text mi-boton mx-2"  role="button" (click)="move('experiencia-section')">Experiencia</a>
+        <a class="nav-link text mi-boton mx-2"  role="button" (click)="move('trabajos-section')">Proyectos</a>
+        <a class="nav-link text mi-boton mx-2"  role="button" (click)="move('sobremi-section')">Sobre mi</a>
       </div>
     </div>
-  </nav>
+  
+    </nav>
+</div>
+  <div class="d-block d-lg-none">
+    <nav class="navbar navbar-expand-lg fixed-top bg-transparent"  style="margin-top: 10px;">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" style="color: #ffffff;" (click)="closeBar()">
+          <i class="fa-solid fa-bars fa-lg" style="color: #ffffff;"></i>
+        </button>
+
+        
+        </div>
+        @if (showBar) {
+  
+          <div class="collapse navbar-collapse show" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link text mi-boton"  role="button" (click)="move('nombre-section')" (click)= "showBar ? closeBar() : null">Inicio</a>
+                <a class="nav-link text mi-boton"  role="button" (click)="move('experiencia-section')" (click)= "showBar ? closeBar() : null">Experiencia</a>
+                <a class="nav-link text mi-boton"  role="button" (click)="move('trabajos-section')" (click)= "showBar ? closeBar() : null">Proyectos</a>
+                <a class="nav-link text mi-boton"  role="button" (click)="move('sobremi-section')" (click)= "showBar ? closeBar() : null">Sobre mi</a>
+              </li>
+            </ul>
+          </div>
+        }
+    </nav>
+  </div>
   

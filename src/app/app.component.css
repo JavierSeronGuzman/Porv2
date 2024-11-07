@@ -9,7 +9,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+    height: 120vh; /* Ocupa el 100% de la altura de la ventana */
     overflow: hidden; /* Evita el desplazamiento */
     opacity: 0; /* Inicia con opacidad 0 para que esté invisible */
     transform: translateY(50px); /* Inicia desplazado hacia abajo */
@@ -32,4 +32,9 @@
     display: block;
 }
 
-/* Puedes usar JavaScript para cambiar la visibilidad de los componentes */
+@media (max-width: 768px) {
+  .container2 {
+      padding-bottom: 40px;
+      padding-top: 70px; /* Agrega espacio interno para mejorar la apariencia */
+  }
+}
