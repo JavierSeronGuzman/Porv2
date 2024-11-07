@@ -2,13 +2,13 @@ import { Component } from '@angular/core';
 import { SharingDataService } from '../../services/sharing-data.service';
 
 @Component({
-  selector: 'navbar',
+  selector: 'footer',
   standalone: true,
   imports: [],
-  templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css'
+  templateUrl: './footer.component.html',
+  styleUrl: './footer.component.css'
 })
-export class NavbarComponent {
+export class FooterComponent {
 
   constructor(
     private sharingDataService: SharingDataService

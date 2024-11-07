@@ -1,5 +1,36 @@
 .text {
     color: aliceblue;
-    font-size: 12px;
+    font-size: 20px;
     font-family: 'Public Pixel', sans-serif;
   }
+  .profile-header {
+    padding-right: 15px; /* Para reducir el espacio entre la imagen y el contenido */
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-bottom: 0; /* Elimina el margen inferior */
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0; /* Elimina el relleno adicional */
+}
+
+.profile-content {
+    width: 100%;
+    max-width: 600px;
+    text-align: center; /* Centra el texto */
+}
+
+.about-section p {
+    margin-bottom: 10px; /* Espacio entre los párrafos */
+}
+
+  
+
+  

@@ -1,5 +1,77 @@
 .text {
     color: aliceblue;
-    font-size: 15px;
+    font-size: 20px;
     font-family: 'Public Pixel', sans-serif;
   }
+ /* Asegura que el contenedor principal esté centrado en la pantalla */
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Centra verticalmente */
+  background-color: #1a1a2e; /* Fondo oscuro para toda la página */
+  padding: 20px;
+}
+
+.project {
+  color: #ffffff;
+  background-color: #1a1a2e00;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  max-width: 800px; /* Limita el ancho del bloque de proyecto */
+  text-align: center; /* Centra el texto */
+}
+
+/* Estilo de los títulos */
+.title {
+  color: #5da3fa;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* Descripción centrada */
+.description {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+/* Centra las etiquetas y ajusta el espaciado */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra las etiquetas */
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tag {
+  background-color: #333344;
+  color: #ffffff;
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-size: 0.9em;
+}
+
+/* Estilo del enlace */
+.link {
+  background-color: transparent;
+  color: #ffffff;
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-size: 0.9em;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+.link:hover{
+  color: aqua;
+}
+
+/* Línea separadora centrada */
+.separator {
+  border: none;
+  border-top: 2px solid white;
+  margin: 20px auto;
+  width: 100%; /* Ancho de la línea */
+}

@@ -1,3 +1,20 @@
-<div>
-    <p class="text">Experiencia</p>
+<div class="row">
+
+    <div class="col-12 d-flex justify-content-center my-3">
+        <p class="text">
+        <i class="fa-solid fa-briefcase" style="color: #ffffff; font-size: 30px;"></i> Experiencia Laboral</p>
+    </div>
+    <div class="d-flex justify-content-center">
+        <div class="timeline">
+            <div class="timeline-item" *ngFor="let item of timelineItems">
+              <div class="timeline-date d-flex justify-content-start">{{ item.date }}</div>
+              <div class="timeline-content">
+                <h3 class="d-flex justify-content-start" style="text-align: justify;">{{ item.role }}</h3>
+                <p class="company d-flex justify-content-start">{{ item.company }}</p>
+                <p  style="color: white; text-align: justify;">{{ item.description }}</p>
+              </div>
+            </div>
+          </div>
+          
+    </div>
 </div>
